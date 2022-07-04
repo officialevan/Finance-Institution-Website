@@ -1,0 +1,548 @@
+<?php
+
+
+session_start();
+	include("connection.php");
+	include("functions.php");
+
+  $user_data = check_login($con);
+
+
+
+
+
+?>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/56c63cc6a8.js"crossorigin="anonymous"></script>
+    <!------<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>----->
+    <title>Pierpoint</title>
+</head>
+<body>
+    <section class="hero">
+        <div class="navigation">
+            <div class="navbar-menu">
+                <img id="mybtn" src="images/fi-rr-menu-burger.svg" width="20px" alt="">
+            </div>
+            <div class="navbar-logo">
+                <a href="index.html"><h1>Pier<span>point.</span></h1></a>
+            </div>
+            <div class="navbar-links">
+                <a href="logout.php" title="LogOut"><span class="material-symbols-outlined">logout</span></a>
+            </div>
+        </div>
+        <div class="navigation2" id="navi">
+            <a href="#c4"></a>
+            <ul>
+                <li><a href="home.php" data-text="Home">Home</a></li>
+                <li><a href="about.html" data-text="About">About</a></li>
+                <li><a href="services.html" data-text="Services">Services</a></li>
+                <li><a href="careers.html" data-text="Careers">Careers</a></li>
+                <li><a href="team.html" data-text="Team">Team</a></li>
+                <li><a href="contact.html" data-text="Contact">Contact</a></li>
+                
+            </ul>
+           
+            </div>
+        <div class="content">
+            <div class="info">
+                <h1>Investment <br>You Will Love.</h1>
+                <p>Want to invest but don't know how to or when to
+                start? Your company is running out of leads? Your competition is getting stiff and you still need to be the 
+                ultimate leader?</p>
+                <a href="register.php">Join Us.</a>
+            </div>
+        </div>
+        
+    </section>
+    <span class="mouse">
+        <span class="mouse-wheel"></span>
+    </span>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <section class="offers">
+        <h1 >Pier<span>point.</span></h1>
+        <p>You can now become an Investor. Save for as low as Ksh.1,000 onetime, daily, weekly or monthly and earn interest poa. Join us to start investing today! Investment products are distributed by Pierpoint, LLC.</p>
+        <div class="row">
+            <div class="course-col">
+                <img src="images/pablita-stepping-up.gif" width="300px" alt="">
+                <h3 class="link">PierPoint Funds</h3>
+                <p>The Pierpoint Funds has paid an average of 9.2% interest P.A in June to clients. Start building
+                    your kitty from 1k to earn good returns monthly. Hit the learn more button to start.
+                </p>
+                <a href="#" class="button">Learn More</a>
+            </div>
+
+            <div class="course-col">
+                <img src="images/bloom-signing-a-contract-by-a-man-through-online.png" width="300px" alt="">
+                <h3 class="link">Sanlam Insurance</h3>
+                <p>Do not set of this weekend without a comprehensive motor insurance cover underwritten by Sanlam. Available on the Pierpoint app.</p>
+                <a href="#" class="button">Learn More</a>
+            </div>
+
+            <div class="course-col">
+                <img src="images/handy-finance.gif" width="300px" alt="">
+                <h3 class="link">Salary Cover.</h3>
+                <p>Did you know? You can now get your Salary covered for upto 12 months in case you lose your job?
+                    Looks good. Learn more.
+                </p>
+                <a href="#" class="button">Learn More</a>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="course-col">
+                <img src="images/online-doctor-appointment.png" width="300px" alt="">
+                <h3 class="link">SASAdoctor.</h3>
+                <p>We know your health and that of your family is a big priority for you. However, time and resources may not always be on your side to achieve the healthcare you desire. 
+                Pierpoint has partnered with SASAdoctor to offer you flexible professional healthcare services. 
+                </p>
+                <a href="#" class="button">Learn More</a>
+            </div>
+
+            <div class="course-col">
+                <img src="images/bloom-signing-a-contract-by-a-man-through-online.png" width="300px" alt="">
+                <h3 class="link">Sanlam Insurance</h3>
+                <p>Do not set of this weekend without a comprehensive motor insurance cover underwritten by Sanlam. Available on the Pierpoint app.</p>
+                <a href="#" class="button">Learn More</a>
+            </div>
+
+            <div class="course-col">
+                <img src="images/handy-finance.gif" width="300px" alt="">
+                <h3>Salary Cover.</h3>
+                <p>Did you know? You can now get your Salary covered for upto 12 months in case you lose your job?
+                    Looks good. Learn more.
+                </p>
+                <a href="#" class="button">Learn More</a>
+            </div>
+            
+        </div>
+        <a href="services.html" class="button">Our Services.</a>
+    </section>
+
+
+    <section class="offers">
+        
+        <h1 class="link">Pier<span>point.</span></h1>
+        <p style="font-size: 30px;" class="link">Why Choose Us?</p>
+        <h1 style="font-weight: 400;">We are the leaders of finance marketplace.</h1>
+        <div class="row">
+            <div class="course-col">
+                <img src="images/clip-brainstorm.gif" width="300px" alt="">
+                <h3>Highly Qualified Financial Experts</h3>
+                <p>Choose from a significant amount of experts to grow your finances.</p>
+            </div>
+
+            <div class="course-col">
+                <img src="images/pierangel.gif" width="300px" alt="">
+                <h3 class="link">Finance Angels</h3>
+                <p>Getting PierAngel gives you real time assistant. Guiding you through decisions that will help you grow financially</p>
+            </div>
+
+            <div class="course-col">
+                <img src="images/pablita-604.gif" width="300px" alt="">
+                <h3 class="link">99.9%</h3>
+                <p style="font-size: 30px;  font-weight:600;">Positive Feedback.</p>
+                <p>Client Approval.</p>
+            </div>
+            
+        </div>
+
+    </section>
+
+<!-------Awards Section---------------------------------------------->
+
+    
+<section class="offers">
+        
+    <h1>Pier<span>point.</span></h1>
+    <p style="font-size: 30px;">Awards Section</p>
+    <div class="row">
+        <div class="course-col">
+        <img src="images/trophy (1).png" alt="" width="100px">
+            <h3 style="font-size: 20px;">Best Consumer Digital Bank</h3>
+            <p>Global Finance Awards</p>
+            <p>2020</p>
+        </div>
+
+        <div class="course-col">
+        <img src="images/trophy (1).png" alt="" width="100px">
+            <h3 style="font-size: 20px;">Best Bank in Sustainable Finance</h3>
+            <p>SFI Catalyst Awards</p>
+            <p>2022</p>
+        </div>
+
+        <div class="course-col">
+            <img src="images/trophy (1).png" alt="" width="100px">
+            <h3 style="font-size: 20px;">Best Consumer Digital Bank</h3>
+            <p>Global Finance Awards</p>
+            <p>2020</p>
+        </div>
+
+        <div class="course-col">
+        <img src="images/trophy (1).png" alt="" width="100px">
+            <h3 style="font-size: 20px;">Best Consumer Digital Bank</h3>
+            <p>SFI Catalyst Awards</p>
+            <p>2019</p>
+        </div>
+        
+    </div>
+
+</section>
+
+<!-------------------Reviews Section------------------------------->
+
+
+    <section class="reviews">
+        <center>
+                <h1>Our Reviews.</h1>
+                <p>You have to fall in love with our Reviews. I mean we are the best in our industry.</p>
+        </center>        
+            <div class="swiper reviews-slider">
+
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slider slide">
+
+                            
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nemo cumque at quod voluptas, natus eligendi culpa iusto exercitationem eos? Animi corporis velit suscipit. Obcaecati quos libero commodi eum excepturi!</p>
+                            <h1>Phenol Benzine</h1>
+                            <span>CEO, Phenol Beauty.</span>
+                            <img src="Images/288.jpg" alt="">
+                            <div class="stars">
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="swiper-slider slide">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nemo cumque at quod voluptas, natus eligendi culpa iusto exercitationem eos? Animi corporis velit suscipit. Obcaecati quos libero commodi eum excepturi!</p>
+                            <h1>Adut Kimberly</h1>
+                            <span>CEO, Indeed.</span>
+                            <img src="Images/366 (1).jpg" alt="">
+                            <div class="stars">
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+    
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slider slide">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nemo cumque at quod voluptas, natus eligendi culpa iusto exercitationem eos? Animi corporis velit suscipit. Obcaecati quos libero commodi eum excepturi!</p>
+                            <h1>Devina Ann</h1>
+                            <span>Intrepreneur, Frankly & Co.</span>
+                            <img src="Images/366 (3).jpg" alt="">
+                            <div class="stars">
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+    
+                            </div>
+                        </div>
+
+
+
+                        <div class="swiper-slider slide">
+
+                            
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nemo cumque at quod voluptas, natus eligendi culpa iusto exercitationem eos? Animi corporis velit suscipit. Obcaecati quos libero commodi eum excepturi!</p>
+                            <h1>Mellisa Ayana</h1>
+                            <span>COO, Mellisa & Mary.</span>
+                            <img src="Images/366 (4).jpg" alt="">
+                            <div class="stars">
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+    
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slider slide">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nemo cumque at quod voluptas, natus eligendi culpa iusto exercitationem eos? Animi corporis velit suscipit. Obcaecati quos libero commodi eum excepturi!</p>
+                            <h1>Samantha Kamau</h1>
+                            <span>Founder, The Insider Magazine.</span>
+                            <img src="Images/366 (5).jpg" alt="">
+                            <div class="stars">
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+    
+                            </div>
+                        </div>
+
+                        <div class="swiper-slider slide">
+
+                            
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nemo cumque at quod voluptas, natus eligendi culpa iusto exercitationem eos? Animi corporis velit suscipit. Obcaecati quos libero commodi eum excepturi!</p>
+                            <h1>Jessica Pearson</h1>
+                            <span>CEO, Pearson,LLC.</span>
+                            <img src="Images/540.jpg" alt="">
+                            <div class="stars">
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star_half</span>
+    
+                                </div>
+                        </div>
+
+                    </div>
+
+           </div>
+
+
+
+
+
+    </section>
+
+
+    <section class="offers">
+        
+        <h1 >Pier<span>point.</span></h1>
+        <p style="font-size: 30px;" >Our Ratings.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3 >700+</h3>
+                <p style="font-size: 29px;  font-weight:600;">Financial Experts</p>
+                <p>Highly Trained.</p>
+            </div>
+
+            <div class="course-col">
+                <h3 >64000+</h3>
+                <p style="font-size: 30px;  font-weight:600;">Happy Clients.</p>
+                <p>They are still happy.</p>
+            </div>
+
+            <div class="course-col">
+                <h3>99.9%</h3>
+                <p style="font-size: 30px;  font-weight:600;">Positive Feedback.</p>
+                <p>Client Approval.</p>
+            </div>
+            
+        </div>
+
+    </section>    
+
+
+<!------------------Coming Soon----------------------------->
+
+
+    <section class="fx">
+        <h1 class="mail" style="font-size: 90px;">Forex Trading Coming Soon</h1>
+        <h3 style="font-size: 45px;">Don't Miss Out.</h3>
+        <img src="images/urban-931.gif" alt="">
+        <div class="timer">
+          <p id="timer"></p>
+          <p class="mail" style="font-size: 20px; margin-top:30px;color:black; font-weight: 400;">By Subscribing to PierPoint, LLC you consent to receive recurring automated promotional and personalized
+            marketing messages via automated technology including emails and text messages. Content is not a Condition of any purchase. View <a href="terms.html">Terms of Use</a> & <a href="terms.html">Privacy Policy.</a>
+            Message and data rates may apply. Reply HELP for help or STOP to opt-out.
+          </p>
+          <a href="" class="button" style="line-height: 40px; padding: 12px30px;">Mail Me</a>
+        </div>
+      </section>
+
+      <span class="mouse2">
+        <span class="mouse-wheel2"></span>
+    </span>
+
+
+<!-------------------------------------Contact Section---------------------------->
+
+
+    <section class="contactus">
+        <h2>Contact Us</h2>
+        <p>Swing by our Offices, or just leave us a message:</p>
+        <div class="contact-container">
+            <div style="text-align:center">
+             
+            </div>
+            <div class="row-contact">
+              <div class="column">
+                <img src="Images/abstract-message-sent.gif" >
+              </div>
+              <div class="column">
+                <form action="contact.php" class="contact-frm" method="post">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="kenya">Kenya</option>
+                    <option value="uganda">Uganda</option>
+                    <option value="tanzania">Tanzania</option>
+                  </select>
+                  <label for="subject">Subject</label>
+                  <textarea id="messages" height="30px" spellcheck="spellcheck" name="messages" placeholder="Write something.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div>
+    </section>
+
+      <section class="footer">
+        <div class="box-container">
+            <div class="box-footer">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#" class="link">Home <span class="material-symbols-outlined" width="15px">open_in_new</span></a></li>
+                    <li><a href="#" class="link">About <span class="material-symbols-outlined">open_in_new</span></a></li>
+                    <li><a href="#" class="link">Services <span class="material-symbols-outlined">open_in_new</span></a></li>
+                    <li><a href="#" class="link">Careers <span class="material-symbols-outlined">open_in_new</span></a></li>
+                    <li><a href="#" class="link">Team <span class="material-symbols-outlined">open_in_new</span></a></li>
+                    <li><a href="#" class="link">Contact <span class="material-symbols-outlined">open_in_new</span></a></li> 
+                </ul>
+            </div>
+
+            <div class="box-footer">
+                <h3>Extra Links</h3>
+                <ul>
+                    <li><a href="#" class="link">Ask a question.<span class="material-symbols-outlined">open_in_new</span></a></li>
+                    <li><a href="#" class="link">Privacy Policy.<span class="material-symbols-outlined">open_in_new</span></a></li>
+                    <li><a href="#" class="link">Terms of Use.<span class="material-symbols-outlined">open_in_new</span></a></li>
+                </ul>
+            </div>
+
+            <div class="box-footer">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><a href="#" class="link">+254110159554.</a></li>
+                    <li><a href="mailto:maildaviesevan@gmail.com" class="link">maildaviesevan@gmail.com<span class="material-symbols-outlined">open_in_new</span></a></li>
+                    <li><a href="#" class="link">Nairobi, Kenya.</a></li>
+                </ul>
+            </div>
+
+            <div class="box-footer">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#" ><img src="images/icons8-facebook.svg" alt="">Facebook</a></li>
+                    <li><a href="#" ><img src="images/icons8-instagram.svg" alt="">Instagram</a></li>
+                    <li><a href="#" ><img src="images/icons8-linkedin-circled.svg" alt="">LinkedIn</a></li>
+                    <li><a href="#" ><img src="images/icons8-whatsapp.svg" alt="">Whatsapp</a></li>
+                    <li><a href="#" ><img src="images/icons8-pinterest.svg" alt="">Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="credit"><h3>Created by <span>Davies Evan</span> | All rights reserved.</h3></div>
+      </section>
+
+
+
+      <script src="script.js">
+        // Set the date we're counting down to
+var countDownDate = new Date("Sept 5, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timer").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+      </script>
+<script>
+   let menu = document.querySelector("#mybtn");
+   let navbar = document.querySelector(".navigation2");
+
+   menu.onclick = () =>{
+    menu.classList.toggle("images/fi-rr-menu-burger.svg");
+    navbar.classList.toggle("active")
+   }
+</script>
+
+<script>
+    mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0; 
+}
+
+</script>
+
+<script>
+    var swiper = new Swiper(".reviews-slider",{
+        loop: true,
+        spaceBetween: 20,
+        autoHeight: true,
+        grabCursor: true,
+        breakpoints: {
+            640:{
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        },
+    });
+
+
+</script>
+
+</body>
+</html>
